@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>11-盒模型margin</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+	#cont{
+		width: 1000px;
+		height: 600px;
+		background: green;
+	}
+
+	div {
+		width: 400px;
+		height: 200px;
+		background: blue;
+		float: left;
+	}
+
+	#test{
+		/*外边距 margin, 分配顺序：上右下左（无分配以对边为准）*/
+		margin: 10px;
+		margin-top: 50px;
+		background: red;
+	}
+
+	#test2{
+		background: orange;
+	}
+
+	#test3{
+		width: 1000px;
+	}
+</style>
+
+</head>
+	<body>
+		<div id="cont">
+			<div id="test"></div>
+			<div id="test2"></div>
+			<div id="test3"></div>
+		</div>
+	</body>
+</html>
